@@ -6,6 +6,9 @@
   <title>Sapien Investimentos</title>
 </head>
 <style>
+  body{
+    font: Arial, sans-serif;
+  }
   #containerCotacoes{
 
     border: 1px solid black;
@@ -20,16 +23,19 @@
     margin: 9px;
   }
   .cotacao1{
-    padding: 8px 20px;
-    margin: 5px;
-    border: 1px solid #f4f4f4;
+    letter-spacing: 0.5px;
+    font: bold 14px Arial, sans-serif;
+    background-color: black;
+    color: white;
+    padding: 8px 15px;
+    margin: 4px 1px;
     border-radius: 10px ;
     display: inline-block;
-    background: #f4f4f4;
   }.cotacao1a{
-
+    padding: 1px 4px;
   }.cotacao1b{
-
+    color: green;
+    padding: 1px 4px;
   }
   .setores{
     margin: 10px;
@@ -44,6 +50,7 @@
   }
 
   #containerMa{
+    font-family: Arial, sans-serif;
     width: 36.5%;
     text-align: center;
     border: 1px solid black;
@@ -52,27 +59,32 @@
     float: right;
   }#maioresAltas{
     float: right;
-    margin: 3px 10px;
+    margin: 3px 0px;
     border-radius: 10px;
     text-align: center;
     display: inline-block;
-    background: f4f4f4;
     border: 1px solid black;
   }table.maioresAltas{
-    margin: 5px 13px ;
+    margin: 5px ;
     }table.maioresAltas tr {
-    border: 1px solid #f4f4f4;
-    background: #f4f4f4;
-    border-radius: 7px;
+    letter-spacing: 0.5px;
+    border: 1px solid black;
+    background: black;
+    border-radius: 10px;
+    color: white;
     display: block;
     margin:3px 0px;
     padding: 3px 3px;
+  }table.maioresAltas tr td{
+    padding: 0px ;
   }.ma{
-      margin: 3px 5px;
+      margin: 3px 0px;
   }
   .clear{
     clear: both;
   }
+  .text-red{color: red;}
+  .text-green{color: green;}
 </style>
 <body>
 
@@ -83,19 +95,19 @@
       >IBOVESPA <span class="cotacao1a"> 116.462 </span> <span class="cotacao1b"> 2,43%</span>
       </div> 
       <div class="cotacao1">
-        DOLLAR<span class="cotacao1a"> 5.453 </span> <span class="cotacao1b"> 2,43%</span>
+        DOLÁR<span class="cotacao1a"> R$ 5,53 </span> <span class="cotacao1b"> 2,43%</span>
       </div>
       <div class="cotacao1">
         BITICOIN <span class="cotacao1a"> 5.453</span> <span class="cotacao1b"> 2,43%</span>
       </div>
       <div class="cotacao1">
-        S&P 500 <span class="cotacao1a"> 5.453</span> <span class="cotacao1b"> 2,43%</span>
+        S&P500 <span class="cotacao1a"> 5.453</span> <span class="cotacao1b"> 2,43%</span>
       </div>
       <div class="cotacao1">
-        S&P 500 <span class="cotacao1a"> 5.453</span> <span class="cotacao1b"> 2,43%</span>
+        PETR4 <span class="cotacao1a"> 5.453</span> <span class="cotacao1b"> 2,43%</span>
       </div>
       <div class="cotacao1">
-        S&P 500 <span class="cotacao1a"> 5.453</span> <span class="cotacao1b"> 2,43%</span>
+        ABEV3 <span class="cotacao1a"> 5.453</span> <span class="cotacao1b"> 2,43%</span>
       </div>
 
     </div>
@@ -140,28 +152,28 @@
         <table class="maioresAltas">
           <tr>
             <td>ACAO4</td>
-            <td>3,43%</td>
-            <td>R$ 18,30</td>
+            <td class="text-green">3,43%</td>
+            <td>R$18,30</td>
           </tr>
           <tr>
             <td>ACAO4</td>
-            <td>3,43%</td>
-            <td>R$ 18,30</td>
+            <td class="text-green">3,43%</td>
+            <td>R$18,30</td>
           </tr>
           <tr>
             <td>ACAO4</td>
-            <td>3,43%</td>
-            <td>R$ 18,30</td>
+            <td class="text-green">3,43%</td>
+            <td>R$18,30</td>
           </tr>
           <tr>
             <td>ACAO4</td>
-            <td>3,43%</td>
-            <td>R$ 18,30</td>
+            <td class="text-green">3,43%</td>
+            <td>R$18,30</td>
           </tr>
           <tr>
             <td>ACAO4</td>
-            <td>3,43%</td>
-            <td>R$ 18,30</td>
+            <td class="text-green">3,43%</td>
+            <td>R$18,30</td>
           </tr>
         
        </table>
@@ -171,101 +183,32 @@
         <table class="maioresAltas">
           <tr>
             <td>ACAO4</td>
-            <td>3,43%</td>
+            <td class="text-red">3,43%</td>
             <td>R$ 18,30</td>
           </tr>
           <tr>
             <td>ACAO4</td>
-            <td>3,43%</td>
+            <td class="text-red">3,43%</td>
             <td>R$ 18,30</td>
           </tr>
           <tr>
             <td>ACAO4</td>
-            <td>3,43%</td>
-            <td>R$ 18,30</td>
+            <td class="text-red">3,43%</td>
+            <td>R$18,30</td>
           </tr>
           <tr>
             <td>ACAO4</td>
-            <td>3,43%</td>
-            <td>R$ 18,30</td>
+            <td class="text-red">3,43%</td>
+            <td>R$18,30</td>
           </tr>
           <tr>
             <td>ACAO4</td>
-            <td>3,43%</td>
-            <td>R$ 18,30</td>
+            <td class="text-red">3,43%</td>
+            <td>R$18,30</td>
           </tr>
        </table>
       </div>
       <div class="clear"> <hr></div>
-      <div id="maioresAltas">
-        <h3 class="ma">TOP 10 MAIORES</h3>
-        <table class="maioresAltas">
-          <tr>
-            <td>ACAO4</td>
-            <td>3,43%</td>
-            <td>R$ 18,30</td>
-          </tr>
-          <tr>
-            <td>ACAO4</td>
-            <td>3,43%</td>
-            <td>R$ 18,30</td>
-          </tr>
-          <tr>
-            <td>ACAO4</td>
-            <td>3,43%</td>
-            <td>R$ 18,30</td>
-          </tr>
-          <tr>
-            <td>ACAO4</td>
-            <td>3,43%</td>
-            <td>R$ 18,30</td>
-          </tr>
-          <tr>
-            <td>ACAO4</td>
-            <td>3,43%</td>
-            <td>R$ 18,30</td>
-          </tr>
-          <tr>
-            <td>ACAO4</td>
-            <td>3,43%</td>
-            <td>R$ 18,30</td>
-          </tr>
-       </table>
-      </div>
-      <div id="maioresAltas">
-        <h3 class="ma">SMALL CAP</h3>
-        <table class="maioresAltas">
-          <tr>
-            <td>ACAO4</td>
-            <td>3,43%</td>
-            <td>R$ 18,30</td>
-          </tr>
-          <tr>
-            <td>ACAO4</td>
-            <td>3,43%</td>
-            <td>R$ 18,30</td>
-          </tr>
-          <tr>
-            <td>ACAO4</td>
-            <td>3,43%</td>
-            <td>R$ 18,30</td>
-          </tr>
-          <tr>
-            <td>ACAO4</td>
-            <td>3,43%</td>
-            <td>R$ 18,30</td>
-          </tr>
-          <tr>
-            <td>ACAO4</td>
-            <td>3,43%</td>
-            <td>R$ 18,30</td>
-          </tr>
-          <tr>
-            <td>ACAO4</td>
-            <td>3,43%</td>
-            <td>R$ 18,30</td>
-          </tr>
-       </table>
       </div>
      </div>
       <div class="clear"></div>      

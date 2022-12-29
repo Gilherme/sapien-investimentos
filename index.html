@@ -13,7 +13,7 @@
 
     border: 1px solid black;
   }#containerSetores{
-    width: 61%;
+    width: 45%;
     text-align: center;
     border: 1px solid black;
     margin: 10px 3px;
@@ -40,10 +40,16 @@
   .setores{
     margin: 10px;
     float: left;
-    border: 1px solid black;
+    border: 3px solid green;
     border-radius: 10px;
     width: 230px;
-    height: 140px;
+    height: 80px;
+  }div.setores img{
+    border: 1px solid hidden;
+    border-radius: 3px;
+    width: 30px;
+    height: 22px;
+    margin: 0 2px;
   }
   .destaque{
     margin:10px;
@@ -58,22 +64,23 @@
     display: inline-block;
     float: right;
   }#maioresAltas{
+    background-color: #f4f4f4;
     float: right;
-    margin: 3px 0px;
+    margin: 5px 11px;
     border-radius: 10px;
     text-align: center;
     display: inline-block;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
   }table.maioresAltas{
     margin: 5px ;
     }table.maioresAltas tr {
     letter-spacing: 0.5px;
     border: 1px solid black;
-    background: black;
+    background: #2E2E2E;
     border-radius: 10px;
     color: white;
     display: block;
-    margin:3px 0px;
+    margin:5px 0px;
     padding: 3px 3px;
   }table.maioresAltas tr td{
     padding: 0px ;
@@ -89,6 +96,8 @@
 <body>
 
   <div id="homeBroker">
+
+<!-- Inicio do container cotacaoTop -->
 
     <div id="cotacaoTop"> 
       <div class="cotacao1"
@@ -111,40 +120,58 @@
       </div>
 
     </div>
+<!-- fim do container cotacaoTop -->
 
     <div id="containerCotacoes">
 
-        <div id="containerSetores">
-          <h3>SETORES / MINHA CARTEIRA / INTERNACIONAL</h3>
+<!-- Inicio do container serotes -->
+
+      <div id="containerSetores">
+          <h3>SETORES</h3>
           <div class="setores">
-          <p>SETORES</p>
+          <p>PETROLEO E DERIVADOS</p>
+          <img src="img/pEd-01.png"><img src="img/pEd-02.png"><img src="img/pEd-03.png"><img src="img/pEd-04.png"><img src="img/pEd-05.png"><button> + </button>
         </div>
         <div class="setores">
-          <p>SETORES</p>
+          <p>TECNOLOGIA</p>
+          <img src="img/t-01.png"><img src="img/t-02.jfif"><img src="img/t-03.png"><img src="img/t-04.png"><img src="img/t-05.png"><button> + </button>
         </div>
         <div class="setores">
-          <p>SETORES</p>
+          <p>CONSUMO CÍCLICO</p>
+          <img src="img/cC-01.png"><img src="img/cC-02.jfif"><img src="img/cC-03.png"><img src="img/cC-04.png"><img src="img/cC-05.jfif"><button> + </button>
         </div>
         <div class="setores">
-          <p>SETORES</p>
+          <p>CONSUMO NÃO CÍCLICO</p>
+          <img src="img/cNc-01.png"><img src="img/cNc-02.png"><img src="img/cNc-03.jfif"><img src="img/cNc-04.png"><img src="img/cNc-05.png"><button> + </button>
         </div>
         <div class="setores">
-          <p>SETORES</p>
+          <p>SAÚDE</p>
+          <img src="img/s-01.png"><img src="img/s-02.png"><img src="img/s-03.png"><img src="img/s-04.png"><img src="img/s-05.png"><button> + </button>
         </div>
         <div class="setores">
-          <p>SETORES</p>
+          <p>FINANCEIRO</p>
+          <img src="img/f-01.png"><img src="img/f-02.png"><img src="img/f-03.png"><img src="img/f-04.png"><img src="img/f-05.png"><button> + </button>
         </div>
         <div class="setores">
-          <p>SETORES</p>
+          <p>MATERIAIS BÁSICOS</p>
+          <img src="img/mB-01.jfif"><img src="img/mB-02.png"><img src="img/mB-03.jfif"><img src="img/mB-04.png"><img src="img/mB-05.jfif"><button> + </button>
         </div>
         <div class="setores">
-          <p>SETORES</p>
+          <p>COMUNICAÇÕES</p>
+          <img src="img/pEd-01.png"><img src="img/pEd-02.png"><img src="img/pEd-03.png"><img src="img/pEd-04.png"><img src="img/pEd-05.png"><button> + </button>
         </div>
         <div class="setores">
-          <p>SETORES</p>
+          <p>BENS INDUSTRIAIS</p>
+          <img src="img/bI-01.png"><img src="img/bI-02.png"><img src="img/bI-03.png"><img src="img/bI-04.jfif"><img src="img/bI-05.png"><button> + </button>
+        </div>
+        <div class="setores">
+          <p>UTILIDADE PÚBLICA</p>
+          <img src="img/uP-01.png"><img src="img/uP-02.png"><img src="img/uP-03.png"><img src="img/uP-04.jfif"><img src="img/uP-05.png"><button> + </button>
         </div>
       </div>
+<!-- Fim do container serotes -->
 
+<!-- inicio Container maiores altas / baixas -->
      <div id="containerMa">
       <h3 class="destaque">DESTAQUE</h3>
        <div id="maioresAltas">
@@ -175,9 +202,9 @@
             <td class="text-green">3,43%</td>
             <td>R$18,30</td>
           </tr>
-        
        </table>
       </div>
+
       <div id="maioresAltas">
         <h3 class="ma">MAIORES BAIXAS</h3>
         <table class="maioresAltas">
@@ -205,14 +232,12 @@
             <td>ACAO4</td>
             <td class="text-red">3,43%</td>
             <td>R$18,30</td>
-          </tr>
        </table>
-      </div>
-      <div class="clear"> <hr></div>
-      </div>
-     </div>
-      <div class="clear"></div>      
-    </div>
+      </div> 
+      </div> 
+<!-- Fim do container maiores altas / baixas -->
+     <div class="clear"></div>  
+     </div>  
   </div>
 </body>
 </html>

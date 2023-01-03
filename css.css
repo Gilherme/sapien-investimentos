@@ -1,20 +1,85 @@
-css.css font: Arial, sans-serif;
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 0px;
+}ul{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}hr{
+    margin: 0px;
+}
+
+/*topo*/
+div#logo h1{
+    text-align: center;
+    color: #4f4f4f;
+    font-size: 28px;
+    padding: 10px 0px 0px 0px;
+  }div#logo ul{
+    margin: -5px 20% 5px 20%;
+  }div#logo ul li{
+    float: left;
+    padding: 2px 5px;
+    margin: 0px 20px;
+  }div#logo ul li a{
+    color: #4f4f4f;
+    text-decoration: none;
+  }div#logo ul li a:hover{
+    text-decoration: none;
+    color: red;
   }
-  #containerCotacoes{
+
+/* Primeira parte do home */
+
+  #containerIndex01{
+    padding: 10px;
     border: 1px solid black;
-  }#containerSetores{
+  }.conteudoPrincipal{
+    width: 50%;
+    height:300px;
+    float: left;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+  }.conteudoAprenda{
     width: 45%;
+    float: right;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+  }div.conteudoAprenda span{
+    font-weight: bold;
+    padding: 2px 3px;
+    margin-left: 10px;
+    display: inline-block;
     text-align: center;
     border: 1px solid black;
-    margin: 10px 3px;
-    display: inline-block;
+  }div.conteudoAprenda ul li{
+    margin: 10px;
+    width: 230px;
+    height: 100px;
+    border: 1px solid black;
+   }.ulAprenda1{
     float: left;
-  }div#containerSetores h3{
-    margin: 9px;
+  }.ulAprenda2{
+    float: right;
   }
-  .cotacao1{
+
+/* COTAÇÕES */
+  #containerCotacoes{
+    border: 1px solid black;
+    padding: 3px;
+    margin-top: 5px;
+  }
+
+/*GRADE DE COTAÇÕES*/
+
+  #gradeCotacoes{
+    margin-top: 0px;
+    padding-top: 0px;
+  }div#gradeCotacoes div{
     letter-spacing: 0.5px;
-    font: bold 14px Arial, sans-serif;
+    font: bold 13px Arial, sans-serif;
     background-color: black;
     color: white;
     padding: 8px 15px;
@@ -27,23 +92,36 @@ css.css font: Arial, sans-serif;
     color: green;
     padding: 1px 4px;
   }
-  .setores{
+
+/*CONTAINER DAS COTAÇÕES ABAIXO DA GRADE DE CORAÇÕES*/
+
+  #cotacoes{
+    border: 1px solid black;
+  }#containerSetores{
+    width: 45%;
+    text-align: center;
+    border: 1px solid black;
+    margin: 10px 3px;
+    display: inline-block;
+    float: left;
+  }div#containerSetores div{
     margin: 10px;
     float: left;
     border: 3px solid green;
     border-radius: 10px;
     width: 230px;
     height: 80px;
-  }div.setores img{
+  }div#containerSetores h3{
+    margin: 9px;
+  }div#containerSetores img{
     border: 1px solid hidden;
     border-radius: 3px;
     width: 30px;
     height: 22px;
     margin: 0 2px;
   }
-  .destaque{
-    margin:10px;
-  }
+  
+/*CONTAINER MAIORES ALTAS / BAIXAS */
 
   #containerMa{
     font-family: Arial, sans-serif;
@@ -51,19 +129,20 @@ css.css font: Arial, sans-serif;
     text-align: center;
     border: 1px solid black;
     margin: 10px 5px;
-    display: inline-block;
+    display:inline-block;
     float: right;
-  }#maioresAltas{
+  }div#containerMa>h2{
+    margin:10px;
+  }div#containerMa>div{
     background-color: #f4f4f4;
     float: right;
     margin: 5px 11px;
     border-radius: 10px;
     text-align: center;
     display: inline-block;
-    /*border: 1px solid black;*/
-  }table.maioresAltas{
+  }div#containerMa table {
     margin: 5px ;
-    }table.maioresAltas tr {
+  }div#containerMa table tr {
     letter-spacing: 0.5px;
     border: 1px solid black;
     background: #2E2E2E;
@@ -72,40 +151,21 @@ css.css font: Arial, sans-serif;
     display: block;
     margin:5px 0px;
     padding: 3px 3px;
-  }table.maioresAltas tr td{
+  }div#containerMa table tr td{
     padding: 0px ;
-  }.ma{
+  }div#containerMa h3{
       margin: 3px 0px;
   }
-  .clear{
-    clear: both;
-  }
+
+
+
+  .clear{clear: both;}
+
+  /*Cores de texto*/
+
   .text-red{color: red;}
   .text-green{color: green;}
 
 
-  .containerIndex01{
-    padding: 10px;
-    border: 1px solid black;
-  }.conteudoPrincipal{
-    float: left;
-    width: 50%;
-    height: 300px;
-    padding: 5px;
-    margin: 5px;
-    border: 1px solid black;
-  }.conteudoAprenda{
-    float: right;
-    padding: 5px;
-    height: 300px;
-    margin: 5px;
-    width: 45%;
-    border: 1px solid black;
-  }
+  
 
-
-
-
-  .clear{
-    clear: both;
-  }

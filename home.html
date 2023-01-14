@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<style>
+		body{
+			font-family: Helvetica, Arial, sans-serif;
+			margin: 0px;
+			padding: 0px;
+		}
+/************ LOGO ****************/
+		
+		 header{
+		 height: 70px	;
+	      background-image: linear-gradient(#000000, #363636);
+	      align-items: stretch;
+	      margin-top: 0px;
+	      display: flex;
+	      flex-direction: row;
+
+	    }#logo a img{
+	      margin-left: 10px;
+	      border:  1px solid black;
+	      margin: 0px;
+	      width: 60px;
+	      height: 60px;
+	    }ul#nav{
+	    
+	      list-style: none;
+	      display: flex;
+	      flex-grow: 3;
+	      flex-direction: row;
+	      justify-content: end;
+	      color: white;
+	      font-weight:bold ;
+	      align-items: center;
+	      padding: 0px 10px;
+	    }ul#nav li{
+	      margin: 0px 10px;
+	    }
+
+
+    .text-red{color: red;}
+
+
+
+
+/************ CONTAINER INDEX 1  ****************/
+		
+		#container01{
+			background-image: linear-gradient(#363636 , 	#DCDCDC);
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			width: 100%;
+			/*margin: 0px auto;*/
+		}.container01ml{
+			flex-wrap: wrap;
+		}#containerNoticias01{
+			background: ;
+			flex-direction: row;
+			flex-wrap: wrap;
+			display: flex;
+			width: 45%;
+			margin: 5px;
+			border-radius: 5px;  
+			border: 1px solid black;
+		}.containerNoticias01ml{
+			order: 2;
+			flex-grow: 1;
+		}#noticiaPrincipal{
+			background: white;
+			flex-grow: 1;
+			width: 100%;
+			height: 300px;
+			border: 1px solid black;
+			border-radius: 5px;
+		}#penultimaNoticia{
+			background: white;
+			flex-grow: 1;
+			flex-basis:200px;
+			height: 160px;
+			margin: 5px;
+			border-radius: 5px;
+			border: 1px solid black;
+		}#antPenultimaNoticia{
+			background: white;
+			flex-grow: 1;
+			flex-basis:200px;
+			height: 160px;
+			margin: 5px;
+			border-radius: 5px;
+			border: 1px solid black;
+		}#containerCotacoes{
+			/*background: white;*/
+			display: flex;
+			width: 55% ;
+			height: 480px;
+			margin: 5px; 
+			border-radius: 5px;
+			border: 1px solid black;
+		}.containerCotacoesml{
+			flex-grow: 1;
+			order: 1;
+		}
+
+		.clear{ clear: both; }
+		.none{display: none;}
+		.block{display: block;}
+		.text-red{color: red;}
+	</style>
+</head>
+<body onresize="ajustaLayoult()">
+
+	<header>
+    <div id="logo">
+      <a href=""><img src="S1.png"></a>
+    </div>
+    <ul id="nav">
+      <li>APRENDA</li>
+      <li>RESUMO DE NOTICIA</li>
+    </ul>
+  </header>
+
+	<div id="container01">
+	<div id="containerNoticias01" >
+		<div id="noticiaPrincipal">
+			<h1><a href="">noticiaPrincipal</a></h1>
+		</div>
+		<div id="penultimaNoticia">
+			<h2><a href="">Penultima Noticia</a></h2>			
+		</div>
+		<div id="antPenultimaNoticia">
+			<h2>Anti Penultima noticia</h2>
+		</div>
+		<div id="antPenultimaNoticia02" class="none" >a</div>
+		<div id="antPenultimaNoticia03" class="none" >b</div>
+	</div>
+		<div id="containerCotacoes">cotacoes</div>
+	</div>
+	<script>
+
+		let container01 = document.getElementById('container01')
+		let containerNoticias01 = document.getElementById('containerNoticias01')
+		let containerCotacoes = document.getElementById('containerCotacoes')
+		let antPenultimaNoticia = document.getElementById('antPenultimaNoticia')
+
+ 		function ajustaLayoult(larguraDaTela){
+ 			larguraDaTela = window.innerWidth
+
+ 			if(larguraDaTela < 850){
+ 			container01.className = 'container01ml'
+ 			containerNoticias01.className ='containerNoticias01ml'
+ 			containerCotacoes.className ='containerCotacoesml'
+ 		}else{
+ 			container01.className = ''
+ 			containerNoticias01.className =''
+ 			containerCotacoes.className =''
+ 		}
+ 		if(larguraDaTela >= 850 && larguraDaTela < 1020){
+ 			antPenultimaNoticia.className = 'none'
+ 			}else{
+ 				antPenultimaNoticia.className = 'block'
+ 			}
+ 		}
+ 		
+ 
+
+	</script>
+</body>
+</html>

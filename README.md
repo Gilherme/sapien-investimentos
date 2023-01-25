@@ -1,2 +1,2 @@
 # sapien-investimentos
-Site de investimentos
+aplicando alguns conhecimentos da area de programamção e de mercado financeiro

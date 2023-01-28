@@ -6,6 +6,8 @@ p{
 body{
 	font-family: Helvetica, Arial, sans-serif;
 	margin: 0px; padding: 0px;
+	overflow: hidden;
+	background-image: linear-gradient(#F8F8FF , white);
 	}
 hr{margin: 0px;}
 
@@ -16,7 +18,7 @@ hr{margin: 0px;}
 .text-red{color: red;}
 
 /************ TOPO  ****************/
-header{
+ header{
     padding: 5px;
 	display: flex;
 	flex-direction: row;
@@ -27,29 +29,29 @@ header{
     height: 70px;
     margin: 0px auto;
 	border-bottom: 1px solid #c0c0c0;
-}
-header a{
+ }
+ header a{
 	text-decoration: none;
 	color: #696969;
-}
-header a:hover{
+ }
+ header a:hover{
 	text-decoration: underline;
-}
-#logo a img{
+ }
+ #logo a img{
 	width: 60px; height: 60px;
-}
-.botaoEntre{
+ }
+ .botaoEntre{
 	padding: 7px;
 	color: #696969; text-decoration: none; border-radius: 5px;
 	border: 1px solid #696969;
 	cursor: pointer;
-}
-.botaoEntre:hover{
+ }
+ .botaoEntre:hover{
 	background-color: #363636;
 	color: white;
 	font-weight: bold;
-}
-ul#nav{
+ }
+ ul#nav{
 	list-style: none;
 	display: flex;
 	flex-direction: row;
@@ -58,30 +60,30 @@ ul#nav{
 	font-size: 18px; color: #696969;
 	width: 90%;
 	margin:3px auto; padding: 0px 10px;
-}
-ul#nav li{
+ }
+ ul#nav li{
 	margin: 5px 10px;
-}
-ul#nav li:hover{
+ }
+ ul#nav li:hover{
 	text-decoration: underline;
 	cursor: pointer;
-}
+ }
 /************ FIM  TOPO  ****************/
   
 /************ CONTAINER INDEX 1  ****************/
-#containerIndex01{
+ #containerIndex01{
 	display: flex;
  	flex-direction: row;
 	justify-content: center;
 	width: 90%;
 	margin: 0px auto;
-}
-.container01ml{
+ }
+ .containerIndex01ml{
 	flex-wrap: wrap;
-}
+ }
 
 /* container noticias 01 */
-#containerNoticias01{
+ #containerNoticias01{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -89,85 +91,132 @@ ul#nav li:hover{
 	margin: 5px;
 	border-radius: 5px;  
 	border: 1px solid black;
-}
-.containerNoticias01ml{
+ }
+ .containerNoticias01ml{
     order: 2;
   	flex-grow: 1;
-}
-#noticiaPrincipal{
+ }
+ #noticiaPrincipal{
 	overflow: hidden;
-	background: white;
 	flex-grow: 1;
 	width: 100%;
 	height: 300px;
 	border: 1px solid black;
 	border-radius: 5px;
-}#noticiaPrincipal img:hover{
+ }
+ #noticiaPrincipal img:hover{
 	animation-name: imagemNoticia;
 	animation-duration: 2s;
 	scale: 1.2;
-}
-@keyframes imagemNoticia{
+ }
+ @keyframes imagemNoticia{
     from {scale: 1.0 ;}
 	to {scale: 1.15;}
-} 
-#penultimaNoticia{
-	background: white;
+ } 
+ #penultimaNoticia{
 	flex-grow: 1;
 	flex-basis:200px;
 	height: 160px;
 	margin: 5px;
 	border-radius: 5px;
 	border: 1px solid black;
-}
-#antPenultimaNoticia{
-    background: white;
+ }
+ #antPenultimaNoticia{
 	flex-grow: 1;
 	flex-basis:200px;
 	height: 160px;
 	margin: 5px;
 	border-radius: 5px;
 	border: 1px solid black;
-}
+ }
 /* FIM COINTAINER NOTICIAS  */
 
 /* CONTAINER COTACOES INDEX */
-#containerCotacoes{
-	display: flex; flex-direction: row;
+ #containerCotacoes{
+	display: flex;
+	flex-direction: row;
 	width: 55% ;
 	height: 480px;
 	margin: 5px; 
 	overflow: hidden;
     border-radius: 5px;
 	border: 1px solid black;
-}
-.containerCotacoesml{
+	background-color:;
+ } 
+ .containerCotacoesml{
 	flex-grow: 1;
 	order: 1;
-}
+ }
 
-/*ticket cotações*/
-.tickerCotacoes{
-    width: 800px;
+/* TICKET COTAÇÕES */
+ .tickerCotacoes{
+    width: 100%;
 	margin: 0 auto;
 	overflow: hidden;
-}
-.tickers{
+ }
+ .tickers{
 	width: 400%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-}
-@keyframes ticker{
+ }
+ .tickers div:not(:last-child){
+ 	margin-right: 15px;
+ 	border-right: 1px solid darkgrey;
+ }
+ @keyframes ticker{
 	0%{right:0px ;}
-	100%{right: 1000px;}
-}
-.ticker{
-	width: 200px;
+	100%{right: 220px;}
+ }
+ .ticker{
 	position: relative;
 	animation-name: ticker;
-	animation-duration: 10s;
+	animation-duration: 20s;
+	font: 600 18px Arial, sans-serif;
+	padding: 10px;
+	letter-spacing: 0.6px;
+ }
+/* FIM TICKET COTAÇÕES */
+
+/* GRÁFICO */
+#grafico{
+	width: 100%;
+	height: 380px;
+	border: 1px solid black;
+	border-radius: 5px;
 }
-/* FIM ticket cotações*/
+/* FIM GRÁFICO */
+
+/* MAIORES ALTAS E BAIXAS */
+.M-A{
+	display: flex;
+	justify-content: right;
+	flex-direction: column;
+	width: 350%;
+}
+
+.maioresAltasBaixas{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	font-weight: 600;
+	letter-spacing: 0.6px;
+}
+.maioresAltasBaixas div:not(:first-child){
+	padding: 4px 20px;
+}
+div.firstA{
+	background-color: #F8F8FF;
+	padding: 4px 14.8px 4px 4px;
+}
+div.firstB{
+	background-color: #F8F8FF;
+	padding: 4px;
+}
+.maioresAltasBaixas div:not(:last-child){
+	border-right: 1px solid darkgray;
+}
+
+/* FIM MAIORES ALTAS E BAIXAS */
 
 /* CONTAINER COTACOES INDEX */

@@ -3,140 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="cssExterno.css">
 	<title>Home</title>
+
 	<style>
-		* {
- 		 box-sizing: border-box;
-			}
-		body{
-			font-family: Helvetica, Arial, sans-serif;
-			margin: 0px; padding: 0px;
-		}
-/************ LOGO ****************/
-		
-		 header{
-		 	padding: 5px;
-	      display: flex; flex-direction: row; align-items: center; justify-content: space-between;
-		    width: 90%; height: 70px; margin: 0px auto;
-	      border-bottom: 1px solid #c0c0c0;
-	    }header a{
-	    	text-decoration: none;
-	    	color: #696969;
-	    }header a:hover{
-	    	text-decoration: underline;
-	    }#logo a img{
-	      width: 60px; height: 60px;
-	    }.botaoEntre{
-	    	padding: 7px;
-	    	color: #696969; text-decoration: none; border-radius: 5px;
-	    	border: 1px solid #696969;
-	    	cursor: pointer;
-	    }.botaoEntre:hover{
-	    	background-color: #363636;
-	 			color: white;
-	 			font-weight: bold;
-	    }ul#nav{
-	      list-style: none;
-	      display: flex; flex-direction: row; justify-content: center; align-items: center;
-	    	font-size: 18px; color: #696969;
-	      width: 90%; margin:3px auto; padding: 0px 10px;
-	    }ul#nav li{
-	      margin: 5px 10px;
-	    }ul#nav li:hover{
-	    	text-decoration: underline;
-	    	cursor: pointer;
-	    }
-    .text-red{color: red;}
-
-
-
-
-/************ CONTAINER INDEX 1  ****************/
-
-		#container01{
-
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			width: 90%;
-			margin: 0px auto;
-		}.container01ml{
-			flex-wrap: wrap;
-		}#containerNoticias01{
-			background: ;	
-			flex-direction: row;
-			flex-wrap: wrap;
-			display: flex;
-			width: 45%;
-			margin: 5px;
-			border-radius: 5px;  
-			border: 1px solid black;
-		}.containerNoticias01ml{
-			order: 2;
-			flex-grow: 1;
-		}#noticiaPrincipal{
-			overflow: hidden;
-			background: white;
-			flex-grow: 1;
-			width: 100%;
-			height: 300px;
-			border: 1px solid black;
-			border-radius: 5px;
-		}#noticiaPrincipal img{
-
-		}#noticiaPrincipal img:hover{
-			animation-name: imagemNoticia;
-			animation-duration: 2s;
-			scale: 1.2;
-		}@keyframes imagemNoticia{
-			from {scale: 1.0 ;}
-			to {scale: 1.15;}
-		} #penultimaNoticia{
-			background: white;
-			flex-grow: 1;
-			flex-basis:200px;
-			height: 160px;
-			margin: 5px;
-			border-radius: 5px;
-			border: 1px solid black;
-		}#antPenultimaNoticia{
-			background: white;
-			flex-grow: 1;
-			flex-basis:200px;
-			height: 160px;
-			margin: 5px;
-			border-radius: 5px;
-			border: 1px solid black;
-		}#containerCotacoes{
-			display: flex; flex-direction: row;
-			width: 55% ;
-			height: 480px;
-			margin: 5px; 
-			overflow: hidden;
-			border-radius: 5px;
-			border: 1px solid black;
-		}.containerCotacoesml{
-			flex-grow: 1;
-			order: 1;
-		}#containerCotacoes ul{
-			width: 100%;
-			display: flex; flex-direction: row;
-			flex-wrap: nowrap;
-			 margin: 3px; padding: 0px;
-			 list-style: none;
-		}#containerCotacoes ul li{
-			padding: 4px;
-		}
-		
-		
-		.clear{ clear: both; }
-		.none{display: none;}
-		.block{display: block;}
-		.text-red{color: red;}
+				
 	</style>
 </head>
+
 <body onresize="ajustaLayoult()">
 
+<!-- TOPO -->	
 	<header>
 		<a href="">Inscreva-se</a>
     <div id="logo">
@@ -144,64 +21,62 @@
     </div>
     <button class="botaoEntre">Entrar</button>
   </header>
-	 	<ul id="nav">
-      <li>Aprenda</li>
-      <li>Ações</li>
-      <li>Fii</li>
-      <li>Resumo de Noticia</li>
-    </ul>
+  
+	<ul id="nav">
+    <li>Aprenda</li>
+    <li>Ações</li>
+    <li>Fii</li>
+    <li>Resumo de Noticia</li>
+   </ul>
+<!-- FIM TOPO -->
 
-	<div id="container01">
+<!-- CONTAINER INDEX01 -->
+	<div id="containerIndex01">
+
+<!-- 	CONTAINER NOTICIAS 01 -->		
 	<div id="containerNoticias01" >
+
 		<div id="noticiaPrincipal">
 			<img src="img/real02.jpeg">
 			<h1><a href="">noticiaPrincipal</a></h1>
 		</div>
+
 		<div id="penultimaNoticia">
 			<h2><a href="">Penultima Noticia</a></h2>			
 		</div>
+
 		<div id="antPenultimaNoticia">
 			<h2>Anti Penultima noticia</h2>
 		</div>
+
 		<div id="antPenultimaNoticia02" class="none" >a</div>
 		<div id="antPenultimaNoticia03" class="none" >b</div>
 	</div>
-		<div id="containerCotacoes">
-			<ul >
-				<li>IBOVESPA</li><li>+2,5%</li><li>120.456</li>
-				<li>DOLÁR</li><li>-1,56%</li><li>R$5,32,00</li>
-				<li>BITCOIN</li><li>+5,89%</li><li>U$20.345,00</li>
-			</ul>
+<!-- FIM CONTAINER NOTICIAS 01 -->
+
+<!-- Container cotacoes -->
+	<div id="containerCotacoes">
+
+		<div class="tickerCotacoes">
+			<div class="tickers">
+				<div class="ticker">
+					<span class="ativo">IBOVESPA</span>
+					<span class="variacao">+3,49</span>
+					<span class="preco">104.324</span>
+				</div>
+				<div class="ticker">
+					<span class="ativo">IBOVESPA</span>
+					<span class="variacao">+3,49</span>
+					<span class="preco">104.324</span>
+				</div>
+			</div>
 		</div>
 	</div>
-	<script>
+<!--  fim Container cotacoes -->
+	</div>
 
-		let container01 = document.getElementById('container01')
-		let containerNoticias01 = document.getElementById('containerNoticias01')
-		let containerCotacoes = document.getElementById('containerCotacoes')
-		let antPenultimaNoticia = document.getElementById('antPenultimaNoticia')
+<!-- FIM CONTAINER INDEX01 -->
 
- 		function ajustaLayoult(larguraDaTela){
- 			larguraDaTela = window.innerWidth
-
- 			if(larguraDaTela < 850){
- 			container01.className = 'container01ml'
- 			containerNoticias01.className ='containerNoticias01ml'
- 			containerCotacoes.className ='containerCotacoesml'
- 		}else{
- 			container01.className = ''
- 			containerNoticias01.className =''
- 			containerCotacoes.className =''
- 		}
- 		if(larguraDaTela >= 850 && larguraDaTela < 1100){
- 			antPenultimaNoticia.className = 'none'
- 			}else{
- 				antPenultimaNoticia.className = 'block'
- 			}
- 		}
- 		
- 
-
-	</script>
+<script src="jsExterno.js"></script>
 </body>
 </html>

@@ -1,0 +1,173 @@
+p{
+	background: ;
+}
+*{
+    box-sizing: border-box;	}
+body{
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 0px; padding: 0px;
+	}
+hr{margin: 0px;}
+
+.clear{ clear: both; }
+.none{display: none;}
+.block{display: block;}
+		
+.text-red{color: red;}
+
+/************ TOPO  ****************/
+header{
+    padding: 5px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: 
+	space-between;
+    width: 90%;
+    height: 70px;
+    margin: 0px auto;
+	border-bottom: 1px solid #c0c0c0;
+}
+header a{
+	text-decoration: none;
+	color: #696969;
+}
+header a:hover{
+	text-decoration: underline;
+}
+#logo a img{
+	width: 60px; height: 60px;
+}
+.botaoEntre{
+	padding: 7px;
+	color: #696969; text-decoration: none; border-radius: 5px;
+	border: 1px solid #696969;
+	cursor: pointer;
+}
+.botaoEntre:hover{
+	background-color: #363636;
+	color: white;
+	font-weight: bold;
+}
+ul#nav{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px; color: #696969;
+	width: 90%;
+	margin:3px auto; padding: 0px 10px;
+}
+ul#nav li{
+	margin: 5px 10px;
+}
+ul#nav li:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+/************ FIM  TOPO  ****************/
+  
+/************ CONTAINER INDEX 1  ****************/
+#containerIndex01{
+	display: flex;
+ 	flex-direction: row;
+	justify-content: center;
+	width: 90%;
+	margin: 0px auto;
+}
+.container01ml{
+	flex-wrap: wrap;
+}
+
+/* container noticias 01 */
+#containerNoticias01{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 45%;
+	margin: 5px;
+	border-radius: 5px;  
+	border: 1px solid black;
+}
+.containerNoticias01ml{
+    order: 2;
+  	flex-grow: 1;
+}
+#noticiaPrincipal{
+	overflow: hidden;
+	background: white;
+	flex-grow: 1;
+	width: 100%;
+	height: 300px;
+	border: 1px solid black;
+	border-radius: 5px;
+}#noticiaPrincipal img:hover{
+	animation-name: imagemNoticia;
+	animation-duration: 2s;
+	scale: 1.2;
+}
+@keyframes imagemNoticia{
+    from {scale: 1.0 ;}
+	to {scale: 1.15;}
+} 
+#penultimaNoticia{
+	background: white;
+	flex-grow: 1;
+	flex-basis:200px;
+	height: 160px;
+	margin: 5px;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+#antPenultimaNoticia{
+    background: white;
+	flex-grow: 1;
+	flex-basis:200px;
+	height: 160px;
+	margin: 5px;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+/* FIM COINTAINER NOTICIAS  */
+
+/* CONTAINER COTACOES INDEX */
+#containerCotacoes{
+	display: flex; flex-direction: row;
+	width: 55% ;
+	height: 480px;
+	margin: 5px; 
+	overflow: hidden;
+    border-radius: 5px;
+	border: 1px solid black;
+}
+.containerCotacoesml{
+	flex-grow: 1;
+	order: 1;
+}
+
+/*ticket cotações*/
+.tickerCotacoes{
+    width: 800px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.tickers{
+	width: 400%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+@keyframes ticker{
+	0%{right:0px ;}
+	100%{right: 1000px;}
+}
+.ticker{
+	width: 200px;
+	position: relative;
+	animation-name: ticker;
+	animation-duration: 10s;
+}
+/* FIM ticket cotações*/
+
+/* CONTAINER COTACOES INDEX */

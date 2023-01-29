@@ -16,6 +16,7 @@ hr{margin: 0px;}
 .block{display: block;}
 		
 .text-red{color: red;}
+.text-green{color: green;}
 
 /************ TOPO  ****************/
  header{
@@ -71,152 +72,167 @@ hr{margin: 0px;}
 /************ FIM  TOPO  ****************/
   
 /************ CONTAINER INDEX 1  ****************/
- #containerIndex01{
-	display: flex;
- 	flex-direction: row;
-	justify-content: center;
-	width: 90%;
-	margin: 0px auto;
- }
- .containerIndex01ml{
-	flex-wrap: wrap;
- }
+	 #containerIndex01{
+		display: flex;
+	 	flex-direction: row;
+		justify-content: center;
+		width: 90%;
+		margin: 0px auto;
+	 }
+	 .containerIndex01ml{
+		flex-wrap: wrap;
+	 }
 
 /* container noticias 01 */
- #containerNoticias01{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	width: 45%;
-	margin: 5px;
-	border-radius: 5px;  
-	border: 1px solid black;
- }
- .containerNoticias01ml{
-    order: 2;
-  	flex-grow: 1;
- }
- #noticiaPrincipal{
-	overflow: hidden;
-	flex-grow: 1;
-	width: 100%;
-	height: 300px;
-	border: 1px solid black;
-	border-radius: 5px;
- }
- #noticiaPrincipal img:hover{
-	animation-name: imagemNoticia;
-	animation-duration: 2s;
-	scale: 1.2;
- }
- @keyframes imagemNoticia{
-    from {scale: 1.0 ;}
-	to {scale: 1.15;}
- } 
- #penultimaNoticia{
-	flex-grow: 1;
-	flex-basis:200px;
-	height: 160px;
-	margin: 5px;
-	border-radius: 5px;
-	border: 1px solid black;
- }
- #antPenultimaNoticia{
-	flex-grow: 1;
-	flex-basis:200px;
-	height: 160px;
-	margin: 5px;
-	border-radius: 5px;
-	border: 1px solid black;
- }
+	  #containerNoticias01{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 45%;
+		margin: 5px;
+		border-radius: 5px;  
+		border: 1px solid black;
+	  }
+	  .containerNoticias01ml{
+	    order: 2;
+	  	flex-grow: 1;
+	  }
+	  #noticiaPrincipal{
+		overflow: hidden;
+		flex-grow: 1;
+		width: 100%;
+		height: 300px;
+		border: 1px solid black;
+		border-radius: 5px;
+	  }
+	  #noticiaPrincipal img:hover{
+		animation-name: imagemNoticia;
+		animation-duration: 2s;
+		scale: 1.2;
+	  }
+	  @keyframes imagemNoticia{
+	    from {scale: 1.0 ;}
+		to {scale: 1.15;}
+	 } 
+	 #penultimaNoticia{
+		flex-grow: 1;
+		flex-basis:200px;
+		height: 160px;
+		margin: 5px;
+		border-radius: 5px;
+		border: 1px solid black;
+	  }
+	  #antPenultimaNoticia{
+		flex-grow: 1;
+		flex-basis:200px;
+		height: 160px;
+		margin: 5px;
+		border-radius: 5px;
+		border: 1px solid black;
+	  }
 /* FIM COINTAINER NOTICIAS  */
 
 /* CONTAINER COTACOES INDEX */
- #containerCotacoes{
-	display: flex;
-	flex-direction: row;
-	width: 55% ;
-	height: 480px;
-	margin: 5px; 
-	overflow: hidden;
-    border-radius: 5px;
-	border: 1px solid black;
-	background-color:;
- } 
- .containerCotacoesml{
-	flex-grow: 1;
-	order: 1;
- }
+	 #containerCotacoes{
+		display: flex;
+		flex-direction: row;
+		width: 55% ;
+		height: 480px;
+		margin: 5px; 
+		overflow: hidden;
+	    border-radius: 5px;
+		border: 1px solid black;
+		background-color:;
+	 } 
+	 .containerCotacoesml{
+		flex-grow: 1;
+		order: 1;
+	 }
 
-/* TICKET COTAÇÕES */
- .tickerCotacoes{
-    width: 100%;
-	margin: 0 auto;
-	overflow: hidden;
- }
- .tickers{
-	width: 400%;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
- }
- .tickers div:not(:last-child){
- 	margin-right: 15px;
- 	border-right: 1px solid darkgrey;
- }
- @keyframes ticker{
-	0%{right:0px ;}
-	100%{right: 220px;}
- }
- .ticker{
-	position: relative;
-	animation-name: ticker;
-	animation-duration: 20s;
-	font: 600 18px Arial, sans-serif;
-	padding: 10px;
-	letter-spacing: 0.6px;
- }
+	/* TICKET COTAÇÕES */
+	 .tickerCotacoes{
+	    width: 100%;
+		margin: 0 auto;
+		overflow: hidden;
+	 }
+	 .tickers{
+		width: 400%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+	 }
+	 .tickers div:not(:last-child){
+	 	margin-right: 15px;
+	 	border-right: 1px solid darkgrey;
+	 }
+	 @keyframes ticker{
+		0%{right:0px ;}
+		100%{right: 220px;}
+	 }
+	 .ticker{
+		position: relative;
+		animation-name: ticker;
+		animation-duration: 20s;
+		font: 600 18px Arial, sans-serif;
+		padding: 10px;
+		letter-spacing: 0.6px;
+	 }
+	 .tickerMl{
+	 	position: relative;
+		animation-name: ticker;
+		animation-duration: 20s;
+	 	font: 600 14px Arial, sans-serif;
+	 	padding: 7px;
+	 }
 /* FIM TICKET COTAÇÕES */
 
 /* GRÁFICO */
-#grafico{
-	width: 100%;
-	height: 380px;
-	border: 1px solid black;
-	border-radius: 5px;
-}
+	#grafico{
+		width: 100%;
+		height: 380px;
+		border: 1px solid black;
+		border-radius: 5px;
+	}
 /* FIM GRÁFICO */
 
 /* MAIORES ALTAS E BAIXAS */
-.M-A{
-	display: flex;
-	justify-content: right;
-	flex-direction: column;
-	width: 350%;
-}
+	.M-A{
+		display: flex;
+		justify-content: right;
+		flex-direction: column;
+		width: 350%;
+	}
+	.maioresAltasBaixas{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		font-weight: 600;
+		letter-spacing: 0.6px;
+	}
+	.maioresAltasBaixas div:not(:first-child){
+		padding: 4px 20px;
+		position: relative;
+		animation-name: altaBaixa;
+		animation-duration: 20s;
+	}
+	div.firstA{
+		position: fixed;
+		background-color: #F8F8FF;
+		padding: 4px 14.8px 4px 4px;
+	}
+	div.firstB{
+		position: absolute;
+		background-color: #F8F8FF;
+		padding: 4px;
+	}
+	.maioresAltasBaixas div:not(:last-child){
+		border-right: 1px solid darkgray;
+	}
 
-.maioresAltasBaixas{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	font-weight: 600;
-	letter-spacing: 0.6px;
-}
-.maioresAltasBaixas div:not(:first-child){
-	padding: 4px 20px;
-}
-div.firstA{
-	background-color: #F8F8FF;
-	padding: 4px 14.8px 4px 4px;
-}
-div.firstB{
-	background-color: #F8F8FF;
-	padding: 4px;
-}
-.maioresAltasBaixas div:not(:last-child){
-	border-right: 1px solid darkgray;
-}
-
+	@keyframes altaBaixa{
+		0%{right: 0px;}
+		100%{right: 200px;}
+	}
 /* FIM MAIORES ALTAS E BAIXAS */
 
 /* CONTAINER COTACOES INDEX */

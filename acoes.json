@@ -1,0 +1,72 @@
+[
+  {
+    "empresa": "Ambev",
+    "codigo": "ABEV3",
+    "preco": "R$15,10",
+    "variacao": "+3,05%",
+    "descricao": "descrição bla bla bla"
+  },
+  {
+    "empresa": "Eternit",
+    "codigo": "ETER3",
+    "preco": "R$12,09",
+    "variacao": "-1,10%",
+    "descricao": "descrição bla bla bla"
+  },
+  {
+    "empresa": "itausa",
+    "codigo": "ITSA4",
+    "preco": "R$14,30",
+    "variacao": "+0,09%",
+    "descricao": "descrição bla bla bla"
+  },
+  {
+    "empresa": "petrobras",
+    "codigo": "PETR3",
+    "preco": "R$33,98",
+    "variacao": "+5,67",
+    "descricao": "descrição bla bla bla"
+  },
+  {
+    "empresa": "via Varejo",
+    "codigo": "VVAR",
+    "preco": "R$02,30",
+    "variacao": "+4,60%",
+    "descricao": "descrição bla bla bla"
+  },
+  {
+    "empresa": "santander",
+    "codigo": "SANB4",
+    "preco": "R$23,30",
+    "variacao": "+3,64%",
+    "descricao": "descrição bla bla bla"
+  },
+  {
+    "empresa": "sapien",
+    "codigo": "SAPN3",
+    "preco": "R$1.303,03",
+    "variacao": "23,89%",
+    "descricao": "Sapien é uma Holding que investe em diversas empresas e setores...."
+  },
+  {
+    "empresa": "facebook",
+    "codigo": "META",
+    "preco": "R$256,01",
+    "variacao": "+4,06%",
+    "descricao": "descrição bla bla bla"
+  },
+  {
+    "empresa": "donna",
+    "codigo": "DONA3",
+    "preco": "R$408,32",
+    "variacao": "+10,06%",
+    "descricao": "descrição bla bla bla"
+  },
+  {
+    "empresa": "tree-life",
+    "codigo": "TREE4",
+    "preco": "R$350,10",
+    "variacao": "+12,00%",
+    "descricao": "Tree Life é uma empresa sem fins lucrativos que aplica seus recursos tanto em pesquisas quanto em ações praticas e ativas de melhorias que ajudam o meio ambiente"
+  }
+]

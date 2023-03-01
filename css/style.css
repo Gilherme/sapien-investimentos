@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+*{
+	font-family: 'Inter', sans-serif;
+	margin: 0px; 
+	padding: 0px;
+  box-sizing: border-box;	
+}
+hr{
+	margin: 0;
+}
+main{
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* 
+Preto azeviche: #0B0B0B
+Preto ônix: #1C1C1C
+Preto grafite: #232323
+Preto carvão: #1F1F1F
+Preto fosco: #141414 
+
+Verde floresta escuro: #0A3328
+Verde floresta profundo: #0D3B2E
+Verde garrafa: #0B6623
+Verde limão claro: #CCFFCC
+*/
+.text-red{color: red;}
+.text-green{color: green;}
+
+/************ TOPO  ****************/
+ header{
+	background-color:   #1C1C1C;
+ }
+.nav-bar{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.1rem 6rem;
+}
+.logo{
+	display: flex;
+	justify-content: center;
+}
+.logo a img{
+	width: 55px;
+}
+.nav-list{
+	display: flex;
+	align-items: center;
+}
+.nav-list ul{
+	display: flex;
+	justify-content: center;
+	list-style: none;
+}
+.nav-item{
+	color: #fff;
+	margin: 0 15px;
+}
+.nav-item a{
+	text-decoration: none;
+	color: #fff;
+}
+.login-botton button{
+	border:none;
+	padding: 10px 10px;
+	border-radius: 8px;
+}
+.login-botton button a{
+	text-decoration: none;
+	color: #000;
+	font-weight: 500;
+}
+.mobile-menu-icon button{
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+.mobile-menu-icon{
+	display: none;
+}
+.mobile-menu{
+	display: none;
+}
+.menu-hamburguer{
+	width: 40px;
+	display: flex;
+	flex-direction: column;
+}
+.menu-hamburguer div{
+	background-color: #fff;
+	width: 90%;
+	height: 4px;
+	margin: 3px 0;
+	border-radius: 2px;
+}
+@media screen and (max-width: 730px){
+	.nav-bar{
+		padding: 1.5rem 4rem;
+	}
+	.nav-item{
+		display: none;
+	}
+	.login-botton{
+		display: none;
+	}
+	.mobile-menu-icon{
+		display: block;
+	}
+	.mobile-menu ul{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		padding-bottom: 1rem;
+	}
+	.mobile-menu .nav-item{
+		display: block;
+		padding-top: 1.2rem;
+	}
+	.mobile-menu .login-botton button{
+		width: 100%;
+	}
+	.open{
+		display: block;
+	}
+}
+/************ FIM  TOPO  ****************/
+
+/* TICKET COTAÇÕES */
+.tickerCotacoes{
+	overflow: hidden;
+	border-style: solid;
+	background-color: #000;
+	border-color:	#363636;
+	border-width:1.5px 0;
+	margin: 0;
+ }
+ .tickers{
+	width: 400%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+ }
+ /* .tickers div:not(:last-child){
+	 
+ } */
+ @keyframes ticker{
+	0%{right:0px ;}
+	100%{right: 220px;}
+ }
+ .ticker{
+	position: relative;
+	animation: ticker 15s infinite linear;
+	margin: 5px 0px;
+	padding: 5px 15px;
+	color: #fff;
+	letter-spacing: 0.9px;
+	font-size: 0.9rem;
+	cursor: pointer;
+ }
+ 
+/* FIM TICKET COTAÇÕES */
+
+
+	 #container{
+		display: flex;
+	 	flex-direction: row;
+		justify-content: space-around;
+		width: 90%;
+		margin: 0px auto;
+		background: linear-gradient();
+	 }
+
+	.navAcoes{
+		border-radius: 10px;
+		width: 280px;
+		border: 1px solid black;
+		text-align: center;
+		background-color:	#2F4F4F;
+	}
+	.navSelect{
+		height: 30px;
+		background-color:#2F4F4F;
+	}
+	.navAcoes select{
+	  user-select: text;
+		background-color:#2F4F4F;
+		color: #fff;
+		border: none;
+		text-align: center;
+		font-size: 16px;
+		display: block;
+		width: 100%;
+		height: 30px;
+	 }
+	.navAcoesNav{
+		color: #FFF;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		padding: 10px;
+	}
+	.navAcoesNav span{
+		width: 25%;
+		font-size: 14px;
+	}
+	.navAcoesNav:hover{
+		background-color:#5F9EA0;
+		cursor: pointer;
+	}
+	.navAcoesNav:not(:last-child){
+		border-bottom: 1px solid gray;
+	}
+	.mais{
+		width: 18px;
+		border-radius: 10px;
+		background-color: transparent;
+		border: 1px solid #fff;
+		color: #FFF;
+		cursor: pointer;
+	}
+	.mais:hover{
+		font-weight: bold;
+		color: green;
+		border: 2px solid green;
+	}
+
+	.cards{
+		width: 280px;
+		height: 310px;
+		border: 1px solid black;
+		margin: 50px 0;
+		border-radius: 9px;
+		background: linear-gradient(to bottom, #CCCCCC, #fff);
+	}
+	.topoCard{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		height: 15%;
+		padding: 5px;
+	}
+	.navCard{
+		height: 10%;
+	}
+	.graficoCard{
+		width: 92%;
+		margin: 5px auto;
+		height: 60%;
+		border-radius: 5px;
+		background-color: rgba(168, 165, 165, 0.2);
+	}
+	
+	.fundoCard{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items:end;
+	}
+	.fundoCard button:not(:last-child){
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+	}
+	.fundoCard button img{
+		width: 20px;
+	}
+	.maisCard{
+		width: 23px;
+		font-size: 1.25rem;
+		border-radius: 11px;
+		border: 1px solid black;
+		background-color: transparent;
+	}
+	.deslike{
+		transform: rotate(180deg)
+	}
+/* GRÁFICO */
+	.grafico-container{
+		padding: 0px;
+		width: 400px;
+		height: 400px;
+		border: 1px solid black;
+		margin: 25px auto;
+	}
+	.ponto{
+		position: relative;
+		width: 1px;
+		height: 1px;
+		border: 1px solid black;
+		background-color: #000;
+}
+
+#grafico{
+	width: 80%;
+	margin: 50px auto;
+	border: 1px solid black;
+}
+	
+/* FIM GRÁFICO */
+

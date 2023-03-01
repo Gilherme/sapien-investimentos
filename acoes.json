@@ -24,7 +24,7 @@
     "empresa": "petrobras",
     "codigo": "PETR3",
     "preco": "R$33,98",
-    "variacao": "+5,67",
+    "variacao": "+5,67%",
     "descricao": "descrição bla bla bla"
   },
   {
@@ -45,7 +45,7 @@
     "empresa": "sapien",
     "codigo": "SAPN3",
     "preco": "R$1.303,03",
-    "variacao": "23,89%",
+    "variacao": "+23,89%",
     "descricao": "Sapien é uma Holding que investe em diversas empresas e setores...."
   },
   {

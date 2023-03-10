@@ -2,17 +2,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/acoes.css">
+  <link rel="stylesheet" href="../css/style.css">
 	<title>Sapien</title>
-
-	<style>
-				
-	</style>
 </head>
-
 <body>
-<main>
 
+<main>
 	<header>
     <nav class="nav-bar">
 
@@ -55,37 +51,25 @@
 
 		</div>
   </header>
-  
-	<div class="tickerCotacoes">
-		<div class="tickers">	
-		</div>
-	</div>
-
-	<div id="container">
-		<div class="navAcoes">
-			<div>
-				<select>
-					<option>Minha Carteira</option>
-					<option>Meus Favoritos</option>
-					<option>Populares</option>
-					<option>Maiores Altas</option>
-					<option>Maiores Baixas</option>
-					<option>criptoMoedas</option>
-				</select>
-			</div>	
-		</div>
 
 		<div class="cards">
 			<div class="card">
+
 				<div class="topoCard">
-					<span>PETR4</span>
-					<span>+3,04%</span>
-					<span>R$ 32,43</span>
+					<span class="ticker-card">PETR4
+            <span class="ticker-card-name">petrobras</span>
+          </span>
+          <span class="preco-card">32,43</span>
+					<span class="variacao-card">+3,04%</span>
 				</div>
+
 				<div class="navCard">
-					<span>Grafico</span>
-					<span>indicadores</span>
+					<ul>
+            <li>grafico</li>
+            <li>indicadores</li>
+          </ul>
 				</div>
+
 				<div class="graficoCard">
 					<div>		
 						<button>1h</button>
@@ -94,22 +78,17 @@
 						<button>5Anos</button>
 					</div>
 				</div>
+
 				<div class="fundoCard">
 					<button><img src="../img/like.png"> <a>1.343</a> </button>
 					<button><img class="deslike" src="../img/like.png"> <a>125</a></button>
 					<button><img src="../img/comentario.png"></button>
 					<button class="maisCard">+</button>
 				</div>
+
 			</div>
 		</div>
-	</div>
-	
-	<div>
-		<canvas class="mychart">
 
-		</canvas>
-	</div>
-		
 </main>
 <script src="../js/index.js"></script>
 </body>

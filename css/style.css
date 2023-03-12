@@ -6,7 +6,7 @@
   box-sizing: border-box;	
 }
 body{
-	background-color: #141414 ;
+	background-color: #141414  ;
 }
 hr{
 	margin: 0;
@@ -30,6 +30,7 @@ Verde limão claro: #CCFFCC
 */
 .text-red{color: red;}
 .text-green{color: green;}
+.clear{ clear: both;}
 
 /************ TOPO  ****************/
  header{
@@ -104,6 +105,14 @@ Verde limão claro: #CCFFCC
 	margin: 3px 0;
 	border-radius: 2px;
 }
+#login form{
+	display: flex;
+	flex-direction: column;
+	width: 320px;
+	align-items: center;
+	color: #fff;
+	border: 1px solid #fff;
+}
 @media screen and (max-width: 730px){
 	.logo a img{
 		width: 50px;
@@ -137,106 +146,103 @@ Verde limão claro: #CCFFCC
 		display: block;
 	}
 }
+@media screen and (max-width: 420px){
+	.card{
+		width: 90%;
+	}
+}
 /************ FIM  TOPO  ****************/
 
-/* TICKET COTAÇÕES */
 .tickerCotacoes{
-	overflow: hidden;
-	border-style: solid;
-	background-color: #000;
-	border-color:	#363636;
-	border-width:1.5px 0;
-	margin: 0;
- }
- .tickers{
-	width: 400%;
+overflow: hidden;
+border-style: solid;
+background-color: #000;
+border-color:	#363636;
+border-width:1.5px 0;
+margin: 0;
+}
+.tickers{
+width: 400%;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+}
+@keyframes ticker{
+0%{right:0px ;}
+100%{right: 220px;}
+}
+.ticker{
+position: relative;
+animation: ticker 15s infinite linear;
+margin: 5px 0px;
+padding: 5px 15px;
+color: #fff;
+letter-spacing: 0.9px;
+font-size: 0.9rem;
+cursor: pointer;
+}
+#container{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+width: 90%;
+margin: 0px auto;
+background: linear-gradient();
+}
+
+.navAcoes{
+	border-radius: 10px;
+	width: 280px;
+	border: 1px solid black;
+	text-align: center;
+	background-color:	#2F4F4F;
+}
+.navSelect{
+	height: 30px;
+	background-color:#2F4F4F;
+}
+.navAcoes select{
+	user-select: text;
+	background-color:#2F4F4F;
+	color: #fff;
+	border: none;
+	text-align: center;
+	font-size: 16px;
+	display: block;
+	width: 100%;
+	height: 30px;
+	}
+.navAcoesNav{
+	color: #FFF;
 	display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
- }
- /* .tickers div:not(:last-child){
-	 
- } */
- @keyframes ticker{
-	0%{right:0px ;}
-	100%{right: 220px;}
- }
- .ticker{
-	position: relative;
-	animation: ticker 15s infinite linear;
-	margin: 5px 0px;
-	padding: 5px 15px;
-	color: #fff;
-	letter-spacing: 0.9px;
-	font-size: 0.9rem;
+	justify-content: space-around;
+	padding: 10px;
+}
+.navAcoesNav span{
+	width: 25%;
+	font-size: 14px;
+}
+.navAcoesNav:hover{
+	background-color:#5F9EA0;
 	cursor: pointer;
- }
- 
-/* FIM TICKET COTAÇÕES */
-
-
-	 #container{
-		display: flex;
-	 	flex-direction: row;
-		justify-content: space-around;
-		width: 90%;
-		margin: 0px auto;
-		background: linear-gradient();
-	 }
-
-	.navAcoes{
-		border-radius: 10px;
-		width: 280px;
-		border: 1px solid black;
-		text-align: center;
-		background-color:	#2F4F4F;
-	}
-	.navSelect{
-		height: 30px;
-		background-color:#2F4F4F;
-	}
-	.navAcoes select{
-	  user-select: text;
-		background-color:#2F4F4F;
-		color: #fff;
-		border: none;
-		text-align: center;
-		font-size: 16px;
-		display: block;
-		width: 100%;
-		height: 30px;
-	 }
-	.navAcoesNav{
-		color: #FFF;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		padding: 10px;
-	}
-	.navAcoesNav span{
-		width: 25%;
-		font-size: 14px;
-	}
-	.navAcoesNav:hover{
-		background-color:#5F9EA0;
-		cursor: pointer;
-	}
-	.navAcoesNav:not(:last-child){
-		border-bottom: 1px solid gray;
-	}
-	.mais{
-		width: 18px;
-		border-radius: 10px;
-		background-color: transparent;
-		border: 1px solid #fff;
-		color: #FFF;
-		cursor: pointer;
-	}
-	.mais:hover{
-		font-weight: bold;
-		color: green;
-		border: 2px solid green;
-	}
+}
+.navAcoesNav:not(:last-child){
+	border-bottom: 1px solid gray;
+}
+.mais{
+	width: 18px;
+	border-radius: 10px;
+	background-color: transparent;
+	border: 1px solid #fff;
+	color: #FFF;
+	cursor: pointer;
+}
+.mais:hover{
+	font-weight: bold;
+	color: green;
+	border: 2px solid green;
+}
 
 	
 

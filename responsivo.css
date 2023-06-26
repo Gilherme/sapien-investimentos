@@ -1,0 +1,73 @@
+@media screen and (max-width: 960px) {
+    .menu-section.on{
+      width: 100vw;
+      height: 100vh;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .one,
+    .two,
+    .three{
+        background-color: #006400;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        transition-duration: 0.3s;
+      }
+      .menu-section.on .menu-icon .one{
+        transform: rotate(45deg) translate(7px, 7px);
+      }
+      .menu-section.on .menu-icon .two{
+        opacity: 0;
+      }
+      .menu-section.on .menu-icon .three{
+        transform: rotate(-45deg) translate(7px, -9px);
+      }
+      .nav{
+        display: none;
+      }
+      .menu-section.on .nav{
+        display: block;
+        text-align: center;
+      }
+      #logo{
+        position: absolute;
+        left: 30px;
+        top: 5px;
+      }
+      .nav li a{
+        font-size: 3rem;
+        line-height: 6rem;
+      }
+      .comece{
+        border-radius: 4rem;
+      }
+      #quemSomos{
+        height: auto;
+        background-color: #1c1c1c;
+        padding: 20px;
+      }
+      #quemSomos h1{
+        width: 90%;
+        margin: -50px 5% 50px 5%;
+        padding: 8px;
+        background-color: #000;
+        position: relative;
+        z-index: 1;
+        color: #fff;
+        text-align: center;
+        border-radius: 80px;
+        border: 10px solid #006400;
+        font-size: 4rem;
+      }
+      #quemSomos p{
+        width: 95%;
+        text-align: center;
+        margin: 5px auto;
+        color: #ffffffde;
+        font-size: 1.6rem;
+      }
+    }

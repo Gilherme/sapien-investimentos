@@ -3,18 +3,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto, sans-serif;
+}
+html{
+  /* A cada 1 rem é considerado 10px */
+  font-size: 62.5%;
 }
 .flex{
   display: flex;
   justify-content: space-between;
 }
-.clear{ clear: both;}
-.block{ display: block;}
-.none{ display: none;}
+.none{display: none;}
 
 /********  header ******/
-.header0{
+.header0,.header1{
   width: 100%;
   height: 85px;
   position: fixed;
@@ -23,19 +25,17 @@
   background-color: #0003;
 }
 .header1{
-  width: 100%;
   height: 70px;
-  position: fixed;
-  transition: 0.5s;
-  z-index: 2;
   background-color: #000;
-} 
-#nav-head{
+}
+.container-header{
+  width: 100%;
+  margin: auto;
+  justify-content: space-around;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
-.logo0{
+.logo0, .logo1{
   margin: 5px 1.3rem  5px 3rem;
   cursor: pointer;
   width: 140px;
@@ -43,87 +43,42 @@
 }
 .logo1{
   margin: 0 1.3rem  2px 3rem;;
-  cursor: pointer;
   width: 130px;
-  transition: 0.5s;
 }
-#nav-head a{
+.nav{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav li a{
   color: #fff;
   text-decoration: none;
-  font: 400 1rem Roboto, sans-serif;
+  font-size: 1.4rem;
+  padding: 2rem;
 }
-#nav-head > a:hover{
+.nav li a:hover{
   color: darkgreen;
   padding-bottom: 2px;
   transition: padding 0.4s;
-  text-decoration: none;
-  font: 400 1rem Roboto, sans-serif;
-  transition: 0.2 s;
   border-bottom: 3px solid darkgreen;
 }
- button.comece{
-  margin-right: 3rem;
-  padding: 10px 20px;
+.comece{
+  padding: 8px 15px;
   cursor: pointer;
   color: #fff;
   background-color: #006400;
-  border: none;
   border-radius: 18px;
-  font: 400 1rem Roboto, sans-serif;
+  font-size: 2rem;
 }
-[x-td]{
-  display: none;
+.menu-icon{
+  position: absolute;
   width: 40px;
-  height: 32px;
-  border: none;
-  border-radius: 5px;
-  background-color: #1c1c1c;
-}
-[x-td] > span{
-  display: block;
-  width: 80%;
-  height: 3.5px;
-  margin: 4px auto;
-  border-radius: 1.3px;
-  background-color: #006400;
-}
-#menu{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  background-color: #000;
-}
-#menu > a{
-  margin: 3px;
-  color: #fff;
-  text-decoration: none;
-  font: 400 1.1rem Roboto, sans-serif;
-}
-#menu > a:hover{
-  color: #006400;
-}
-#menu > button {
-  margin: 0.1rem;
-  padding: 8px 16px;
-  cursor: pointer;
-  background-color: #006400;
-  border: none;
-}
-#menu > button a{
-  color: #fff;
-  font: 400 0.9rem Roboto, sans-serif;
-  text-decoration: none;
+  right: 15px;
+  top: 15px;
 }
 
 @media screen and (max-width: 960px){
-  #nav-head a, .comece{
-    display: none;
-  }
-  .logo{
-    margin: 0.1rem 1rem 0.1rem 1rem;
-    cursor: pointer;
-    width: 100px;
-  }
   .logo0{
     margin: 3px 1rem  3px 2rem;
     cursor: pointer;
@@ -136,16 +91,13 @@
     width: 110px;
     transition: 0.5s;
   }
-  [x-td]{
-    display: block;
-    margin: 0 1.5rem;
-  }
+  
 }
 /************* HOME ************/
 #home{
   width: 100%;
   height: 700px;
-  background-image: url(fundo02.jpg);
+  background-image: url(img/fundo02.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -172,7 +124,8 @@
   height: 198px;
   padding-top: 35px;
   color: #ffffffde;
-  font: 500 1.7rem Roboto;
+  font-size: 2rem;
+  font-weight: 500;
   padding-left: 80px;
   border-radius: 50px;
 }
@@ -194,14 +147,14 @@
 }
 #qualidades ul li{
   color: #06a206;
-  font: 500 1.5rem Roboto;
+  font-size: 2rem;
 }
 @media screen and (max-width: 1060px){
   .homeLeft h1{
     height: 198px;
     padding-top: 35px;
     color: #ffffffde;
-    font: 500 1.7rem Roboto;
+    font-size: 2rem;
     padding-left: 30px;
     border-radius: 50px;
   }
@@ -213,17 +166,15 @@
     background-color: #1c1c1c;
     background-size: 100%;
     position: relative;
-    /* border: 1px solid black; */
   }
   .homeLeft h1{
     width: 90%;
     padding: 10px 20px 0px 10px;
     color: #fff;
-    font: 400 1.5rem Roboto;
+    font-size: 2rem;
     background-color: #0003;
     border-radius: 50px;
     margin: 150px 5% 0px 5%;
-    /* border: 1px solid #fff; */
   }
   #home div{
     width: 100%;
@@ -242,14 +193,10 @@
   }
   #qualidades ul li{
     color: #06a206;
-    font: 500 1.5rem Roboto;
+    font-size: 2rem;
   }
 }
-@media screen and (max-width: 400px){
-  #qualidades ul{ 
-    margin: 0 0 0 35px;
-  }
-}
+
 
 /*************** Quem somos  *******************/
 #quemSomos{
@@ -267,43 +214,16 @@
   text-align: center;
   border-radius: 80px;
   border: 10px solid #006400;
-  font: 400 4.2rem Roboto, sans-serif;
+  font-size: 5rem;
 }
 #quemSomos p{
   width: 75%;
   text-align: center;
   margin: 5px auto;
   color: #ffffffde;
-  font: 400 1.2rem Roboto, sans-serif;
+  font-size: 1.6rem;
 }
-@media screen and (max-width: 960px) {
- 
-  #quemSomos{
-    height: auto;
-    background-color: #1c1c1c;
-    padding: 20px;
-  }
-  #quemSomos h1{
-    width: 90%;
-    margin: -50px 5% 50px 5%;
-    padding: 8px;
-    background-color: #000;
-    position: relative;
-    z-index: 1;
-    color: #fff;
-    text-align: center;
-    border-radius: 80px;
-    border: 10px solid #006400;
-    font: 400 3.5rem Roboto, sans-serif;
-  }
-  #quemSomos p{
-    width: 95%;
-    text-align: center;
-    margin: 5px auto;
-    color: #ffffffde;
-    font: 400 1.2rem Roboto, sans-serif;
-  }
-}
+
 
 /****************** Soluções ****************/
 #solucoes{
@@ -315,7 +235,7 @@
   text-align: center;
   color: #fff;
   padding: 15px;
-  font: 300 2.5rem Roboto, sans-serif;
+  font-size: 3rem;
 }
 #solucoes > h1 strong{
   color: #006400;
@@ -381,4 +301,10 @@ footer{
   color: #fff;
   text-align: end;
   padding: 0 20px;
+}
+
+@media screen and (max-width: 420px){
+  #qualidades ul{ 
+    margin: 0 0 0 35px;
+  }
 }

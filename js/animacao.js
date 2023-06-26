@@ -1,22 +1,3 @@
-menuMobile = document.getElementById('menu-mobile')
-const menuShow = () =>
- menuMobile.style.display == 'none' ? 
- menuMobile.style.display = 'block' :
- menuMobile.style.display = 'none';
-
-// muda estilo do cabeçalho quando mexer o scrool
-window.addEventListener('scroll', () => {
-  let header = document.querySelector('header')
-  let logo = document.querySelector('#logo')
-  if(scrollY > 0){
-    header.classList.remove('header0'); logo.classList.remove('logo0');
-    header.classList.add('header1');    logo.classList.add('logo1')
-  }else{
-    header.classList.remove('header1'); logo.classList.remove('logo1');
-    header.classList.add('header0');    logo.classList.add('logo0')
-  }
-})
-
 let x1 = 40; let y1 = 130; let x2 = 40; let y2 = 160;
 
 // Animação 2
@@ -130,5 +111,3 @@ function handleScroll() {
   }
 }
 window.addEventListener('scroll', handleScroll);
-
-// fazer carrosel 

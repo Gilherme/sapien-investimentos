@@ -5,31 +5,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsivo.css">
   <title>Sapien Investimentos</title>
 </head>
 <body>
 
   <header class="header0">
-    <nav id="nav-head">
-     <img id="logo" class="logo0" src="logo.png" alt="Sapien consultoria de investimentos">
-     <a href="#home">HOME</a>
-     <a href="#quemSomos">QUEM SOMOS</a>
-     <a href="#solucoes">SOLUÇÕES</a>
-     <a href="#comoFazemos">COMO FAZEMOS</a>
-     <a href="#contato">CONTATO</a>
-     <button class="comece">COMEÇE AGORA</button>
-     <button x-td onclick="menuShow()"><span></span><span></span><span></span></button>
-    </nav>
-    <div class="none" id="menu-mobile">
-      <nav id="menu">
-        <a href="#home">HOME</a>
-        <a href="#quemSomos">QUEM SOMOS</a>
-        <a href="#solucoes">SOLUÇÕES</a>
-        <a href="#comoFazemos">COMO FAZEMOS</a>
-        <a href="#contato">CONTATO</a>
-        <button><a href="#contato">COMEÇE AGORA</a></button>
-      </nav>
+
+    <div class="container-header">
+      <img id="logo" class="logo0" 
+      src="img/logo.png" alt="Sapien consultoria de investimentos">
+
+      <div class="menu-section">
+        <div class="menu-icon">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+        </div>      
+    
+          <ul class="nav">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#quemSomos">QUEM SOMOS</a></li>
+            <li><a href="#solucoes">SOLUÇÕES</a></li>
+            <li><a href="#comoFazemos">COMO FAZEMOS</a></li>
+            <li><a href="#contato">CONTATO</a></li>
+            <li class="comece"><a href="#contato">COMEÇE AGORA</a></li>
+          </ul>  
+        </nav>
+      </div>
     </div>
+
   </header>
 
   <section id="home" class="flex">
@@ -81,49 +86,49 @@
     <h1>Nossas <strong>Soluções</strong></h1>
     <div  class="carroselSolucoes">
       <div id="box1" id="box2" class="box">
-        <img src="planejamento.png" alt="">
+        <img src="img/planejamento.png" alt="">
         <h2>Planejamento Financeiro</h2>
         <div class="boxText">    
           <p>Ajudamos nossos clientes a criar um plano abrangente para atingir suas metas financeiras. Isso envolve a avaliação da situação financeira atual, estabelecimento de metas realistas, desenvolvimento de estratégias de poupança e investimento, e monitoramento contínuo do progresso.</p>
         </div>
       </div>
       <div class="box">
-        <img src="investimentos.png" alt="">
+        <img src="img/investimentos.png" alt="">
         <h2>Investimentos</h2>
         <div class="boxText">    
           <p> Analisamos seu perfil de risco e os objetivos financeiros para recomendar as melhores estratégias de investimento adequadas. contando com sonselhos sobre a alocação de ativos, seleção de investimentos, diversificação entre setores e países sempre com um bom gerenciamento de risco.</p>
         </div>
       </div>
       <div class="box">
-        <img src="aposentadoria.png" alt="">
+        <img src="img/aposentadoria.png" alt="">
         <h2>Aposentadoria</h2>
         <div class="boxText">    
           <p>Ajudamos nossos clientes a se prepararem para a aposentadoria, determinando quanto dinheiro será necessário, identificando as melhores opções de aposentadoria e elaborando estratégias para acumular e gerenciar os recursos financeiros durante a aposentadoria.</p>
         </div>
       </div>
       <div class="box">
-        <img src="divida.png" alt="">
+        <img src="img/divida.png" alt="">
         <h2>Gerenciamento de dívidas</h2>
         <div class="boxText">    
           <p> Ajudamos você a avaliar e gerenciar dívidas existentes, oferecendo estratégias para reduzir o endividamento, consolidar dívidas, renegociar termos e condições de empréstimos, entre outras soluções.</p>
         </div>
       </div>
       <div class="box">
-        <img src="tributario.png" alt="">
+        <img src="img/tributario.png" alt="">
         <h2>Planejamento tributário</h2>
         <div class="boxText">    
           <p> Auxiliamos na otimização da sua situação fiscal, buscando estratégias legais para reduzir a carga tributária e maximizar a eficiência fiscal, considerando as leis e regulamentações.</p>
         </div>
       </div>
       <div class="box">
-        <img src="seguros.png" alt="">
+        <img src="img/seguros.png" alt="">
         <h2>Seguros e proteção financeira</h2>
         <div class="boxText">    
           <p>Ajudamos você a identificar suas necessidades de proteção financeira, como seguros de vida, saúde, propriedade e responsabilidade civil. Eles fornecem orientações sobre os tipos de seguro adequados e auxiliam na seleção de produtos que atendam às necessidades individuais.</p>
         </div>
       </div>
       <div class="box">
-        <img src="sucessao.png" alt="">
+        <img src="img/sucessao.png" alt="">
         <h2>Planejamento sucessório</h2>
         <div class="boxText">    
           <p>Auxiliamos nossos clientes na elaboração de um plano sucessório eficaz para transferir os bens e ativos para as próximas gerações. Isso envolve a criação de testamentos, estabelecimento de fundações ou trustes, planejamento de doações e minimização de impostos sobre heranças.</p>
@@ -148,5 +153,7 @@
     <p class="direitos">Todos os direitos reservados &copy; 2023</p>
   </footer>
 </body>
-<script src="script.js"></script>
+<script src="js/script.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/animacao.js"></script>
 </html>
